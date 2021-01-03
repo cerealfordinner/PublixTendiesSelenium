@@ -5,15 +5,6 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.keys import Keys
 import time
-import os
-from twilio.rest import Client
-
-# Your Account SID from twilio.com/console
-account_sid = "AC19687509f815d920ac2201bdffa9b709"
-# Your Auth Token from twilio.com/console
-auth_token  = "a497c8816ff0e59d501fa4892032df6c"
-
-client = Client(account_sid, auth_token)
 
 PATH = "C:\Program Files (x86)\chromedriver.exe"
 driver = webdriver.Chrome(PATH)
